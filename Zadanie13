@@ -22,4 +22,15 @@ System.out.print(a[i][j]+" ");
 import java.util.Arrays;
 class Main {
 public static void main(String[] args) {
-int num[][] = { {5, 4, 9}, {7, 5, 8},{0,3,1} }; int[] flat = new int[3 * 3]; int ctr = 0; for (int row = 0; row < 3; row++) { for (int col = 0; col < 3; col++) { flat[ctr++] = num[row][col]; } } Arrays.sort(flat); ctr = 0; for (int row = 0; row < 3; row++) { for (int col = 0; col < 3; col++) { num[row][col] = flat[ctr++]; } } for (int row = 0; row < 3; row++) { for (int col = 0; col < 3; col++) { System.out.print(num[row][col] + " "); } System.out.println(); } } }
+int num[][] = { {5, 4, 9}, {7, 5, 8},{0,3,1} }; 
+int[] flat = new int[3 * 3]; int ctr = 0;
+for (int row = 0; row < 3; row++) { 
+for (int col = 0; col < 3; col++)
+{ flat[ctr++] = num[row][col]; }
+} Arrays.sort(flat); ctr = 0; for (int row = 0; row < 3; row++)
+{ for (int col = 0; col < 3; col++) { num[row][col] = flat[ctr++]; }
+} for (int row = 0; row < 3; row++) { for (int col = 0; col < 3; col++) 
+{ System.out.print(num[row][col] + " "); } System.out.println(); 
+           } 
+      } 
+}
